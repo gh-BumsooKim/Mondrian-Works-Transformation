@@ -42,6 +42,8 @@ for i in range(img.shape[1]):
                 
         # Replace origin image to our simplified color_set
         img[j][i] = color_set[index]
+
+cv2.imwrite("color_simplified.png", img)
         
 # Replace selected color_set to other color_set
 target_index = 1 # Target color index in color_set.
